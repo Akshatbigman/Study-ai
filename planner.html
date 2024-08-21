@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Schedule Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Schedule Planner</h1>
+        <form id="plannerForm">
+            <div>
+                <label for="subjects">Subjects (comma-separated):</label>
+                <input type="text" id="subjects" required>
+            </div>
+            <div>
+                <label for="hours">Available Hours per Day:</label>
+                <input type="number" id="hours" min="1" max="24" required>
+            </div>
+            <button type="submit">Generate Schedule</button>
+        </form>
+        <div id="loading" class="loading">Loading...</div>
+        <button id="viewCurrentButton" >View Current Schedule</button>
+        <button id="viewPreviousButton">View Previous Schedule</button>
+        <button id="backButton" >Back to Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
